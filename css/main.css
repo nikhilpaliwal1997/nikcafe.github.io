@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+}
+.row
+{
+    max-width: 1180px;
+    margin: auto;
+}
+.logo
+{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.main-nav
+{
+    float:right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+
+}
+body{
+    
+    font-family: 'Flamenco', cursive;
+
+    font-size: 20px;
+    overflow: hidden;
+    color:white;
+}
+.main-nav li a{
+    color:white;
+    padding: 5px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+.main-nav li a:hover{
+
+    border-bottom: 2px solid  rgb(239, 243, 11);
+
+}
+.clearfix:after
+{
+    content: ".";
+    visibility:hidden;
+    display: block;
+    clear:both; 
+    height:0px;
+}
+.main-content{
+    width: 1180px;
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+h1{
+    color: aliceblue;
+    font-size: 240%;
+    word-spacing: 5px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform:uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2;
+}
+.btn-full
+{
+    background-color: transparent;
+    color: rgb(239, 243, 11);
+    margin-right: 15px;
+    border: 1px solid rgb(239, 243, 11);
+}
+
+.btn-full:hover{
+    background-color: rgb(33, 103, 163);
+}
+.btn-t
+{
+    background-color: transparent;
+    color: white;
+    margin-right: 15px;
+    border: 1px solid white;
+}
+
+.btn-t:hover{
+    background-color:rgb(11, 139, 243);
+   
+}
+.color{
+    animation: colorchange 1s infinite;
+}
+.mobie{display: none}
+
+@keyframes colorchange{
+    0%{color:red;}
+    25%{color: aqua;}
+    50%{color: chartreuse;}
+    100%{color: crimson;}
+}
+
+@media only screen and (max-width:1180px){
+    .main-content{
+        width:100%;
+        padding:0 20px; 
+    }
+}
+@media only screen and (max-width:998px)
+{
+    h1{font-size: 200%;}
+}
+@media only screen and (max-width:768px)
+{
+    h1{font-size: 180%;}
+    .main-nav{display:none
+      
+    }
+    .mobie{
+        display: inline-block;
+        color:white;
+        float: right;
+        margin-right: 20px;
+        margin-top: 50px;
+}
+.main-nav{float: left;}
+.main-nav li{
+    
+    display:block;
+    margin-top: 10px;
+}
+}
+
+@media only screen and (max-width:480px)
+{
+    .btn-full{margin-bottom:20px;}
+}

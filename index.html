@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NikCafe</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="images/coffee-logo-png-7501.png" class="logo">
+                <ul class="main-nav animated slideInDown " id="check">
+                    <li><a href="#">Cake delivery</a></li>
+                    <li><a href="#">How to order</a></li>
+                    <li><a href="#">Check more</a></li>
+                    <li><a href="#">SignUp</a></li>
+                </ul>
+                <a href="#" class="mobie" onclick="show()"><i class="fa fa-bars"></i></a>
+
+                </div>
+        </nav>
+        <div class="main-content">
+        <h1>Welcome to <span class="color">Nik cafe</span >.<br>house of cake lover oo yes</h1>
+        <a href="#" class="btn btn-full">Click to order</a>
+        <a href="#" class="btn btn-t">Check more</a>
+        </div>
+    </header>
+    
+</body>
+<script>
+    function show()
+    {
+        var x=document.getElementById('check');
+        if(x.style.display === "none")
+        {
+          x.style.display="block";
+        }
+        else{
+            x.style.display="none";
+        }
+    }
+</script>
+</html>

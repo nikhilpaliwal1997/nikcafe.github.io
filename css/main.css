@@ -146,7 +146,7 @@ h1{
         margin-right: 20px;
         margin-top: 50px;
 }
-.main-nav{float: left;}
+.main-nav{float: left;font-weight:bolder; }
 .main-nav li{
     
     display:block;
